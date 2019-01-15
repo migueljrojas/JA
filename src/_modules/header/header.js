@@ -7,15 +7,30 @@ var Header = function() {
     var menuOpen = $('.header__hamburguer');
     var menuClose = $('.header__nav__close');
 
+    var buscarButton = $('[href="#buscar"]');
+    var buscarInput = $('.header__input');
+
+
     menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
     });
 
-    menuClose.on('click', function(){
-        header.removeClass('-open');
-        body.removeClass('-hideOverflow');
+    buscarButton.on('click', function(e) {
+        e.preventDefault();
+
+        if (buscarInput.hasClass("-open")) {
+            buscarInput.removeClass("-open")
+        } else {
+            buscarInput.addClass('-open');
+            buscarInput.focus();
+        };
     });
+
+    // buscarInput.on('focusout', function() {
+    //     $(this).removeClass('-open');
+    // });
+
 };
 
 module.exports = Header;

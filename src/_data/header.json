@@ -1,6 +1,26 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"Degustaciones",
+        "url":"#"
+    },
+    {
+        "name":"Vinos",
+        "url":"#"
+    },
+    {
+        "name":"Combos",
+        "url":"#"
+    },
+    {
+        "name":"Mundo",
+        "url":"#"
+    },
+    {
+        "name":"Blog",
+        "url":"#"
+    },
+    {
+        "name":"Contacto",
+        "url":"#"
     }
 ]
