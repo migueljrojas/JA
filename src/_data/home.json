@@ -1,23 +1,24 @@
 [
     {
-        "mainImage":"https://picsum.photos/1900/1300?image=0",
+        "mainImage":"/images/home/slide1.jpg",
         "subtitle":"tag name",
         "title":"La mejor degustación de vinos hoy acá",
         "button":"Ingresar",
-        "altImage":"https://picsum.photos/1900/1300?image=0",
+        "altImage":"/images/home/slide1-product.jpg",
         "date":"20 de Septiembre",
         "altTitle":"Titulo de la degustación blablabla",
         "price": "ARS 450",
-        "layerUrl":"/images/"
+        "layerUrl":"/images/home/purple-ripple-top.png"
     },
     {
         "mainImage":"https://picsum.photos/1900/1300?image=0",
         "subtitle":"tag name",
         "title":"Lorem ipsum dolor sit amet",
         "button":"Lorem",
-        "altimage":"",
+        "altImage":"https://picsum.photos/1900/1300?image=0",
         "date":"30 de Septiembre",
         "altTitle":"Titulo de la seccion",
-        "price": "ARS 850"
+        "price": "ARS 850",
+        "layerUrl":"/images/home/purple-ripple-top.png"
     }
 ]

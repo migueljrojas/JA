@@ -1,12 +1,17 @@
 .header {
 
     $h: &;
+    @include trans;
 
     position: fixed;
     background: transparent;
     top: 0;
     width: 100%;
     z-index: 1000;
+
+    &.sticky {
+        background: $purple;
+    }
 
     &__container {
         display: flex;
@@ -16,7 +21,16 @@
     }
 
     &__logo {
+        height: 100%;
+        position: relative;
 
+        img {
+            position: absolute;
+            height: 70%;
+            width: auto;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+        }
     }
 
     &__nav {
@@ -65,6 +79,7 @@
         border: none;
         outline: none;
         padding: 5px 10px;
+        border-radius: 5px;
 
 
         &.-open {
@@ -77,6 +92,7 @@
         background: transparent;
         border: none;
         font-size: 24px;
+        outline: none;
     }
 
     &__hamburguer {

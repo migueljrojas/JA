@@ -4,11 +4,11 @@ include ./_modules/slider/slider
 
 block content
     main.home
-        .home__container
+        section.home__hero
             +slider("home__slider", "all")
                 each slide in site.data.home
                     .home__slide
-                        img(src=slide.mainImage)
+                        img.home__slide__main-image(src=slide.mainImage)
                         .home__slide__content
                             p.home__slide__subtitle=slide.subtitle
                             h2.home__slide__title=slide.title
@@ -20,3 +20,124 @@ block content
                                 p.home__slide__date=slide.date
                                 h3.home__slide__group-title=slide.altTitle
                                 span.home__slide__price=slide.price
+                        .home__slide__layer
+                            img(src=slide.layerUrl)
+        section.home__agendar
+            .home__agendar__backlayer
+                img(src="/images/home/purple-ripple-bottom.png")
+            .home__agendar__col.home__agendar__col--left
+                h2.home__agendar__title Best wineexperience of the city!
+                p.home__agendar__text There is a lot of people out there saying that you can´t miss a stop in our store, so do not disappoint them!. We offer the best wine tastings every day, we make festivals, we tell stories, we laugh and take photos... Oh, and we sell wine too!
+                .home__agendar__wrapper
+                    .home__agendar__image
+                        img(src="/images/home/icon-wine-book.png")
+                    .home__agendar__group
+                        h4.home__agendar__group-title Book your own glass in our tastings...
+                        .home__agendar__group-text We will pour you wine, tell stories and make jokes until you get tired of laughing.
+                .home__agendar__wrapper
+                    .home__agendar__image
+                        img(src="/images/home/icon-wine-bag.png")
+                    .home__agendar__group
+                        h4.home__agendar__group-title buy wine
+                        .home__agendar__group-text Choose your perfect selection of Argentinian wine and carry them with secure pack for your flight
+                .home__agendar__wrapper
+                    .home__agendar__image
+                        img(src="/images/home/icon-heart.png")
+                    .home__agendar__group
+                        h4.home__agendar__group-title If you just love wine...
+                        .home__agendar__group-text Come and see what heppens. Tasting, mettings, winemakers visits... JA is Argentinian wine embassy in Buenos Aires
+            .home__agendar__col.home__agendar__col--right
+                .home__agendar__container
+                    .home__agendar__dacoration-line
+                        img(src="/images/home/icon-yellow-ripple.png")
+                    h3.home__agendar__calendar-title Book your tasting here!
+                    .home__agendar__calendar-group
+                        .home__agendar__calendar
+                        .home__agendar__appoinments
+                            .home__agendar__appoinments-image
+                                img(src="images/home/slide1-product.jpg")
+                            .home__agendar__appoinments-wrapper
+                                h5.home__agendar__appoinments-title Titulo de la degustación
+                                p.home__agendar__appoinments-text Lorem ipsum dolor sit amet, consectetur adepisicing elit, sed do
+                                a.home__agendar__appoinments-button acceder
+                        .home__agendar__comments
+                            .home__agendar__comments-image
+                                img(src="/images/home/icon-plane.png")
+                            .home__agendar__comments-text 
+                                |When are you visiting BA?
+                                br
+                                span Filter by yourr trip dates
+                        .home__agendar__decoration-circle
+                            img(src="/images/home/icon-yellow-circle.png")
+                        .home__agendar__decoration-yellow-square
+                            img(src="/images/home/dotted-square-yellow.png")
+                        .home__agendar__decoration-white-square
+                            img(src="/images/home/dotted-square-white.png")
+        section.home__opiniones
+            .home__opiniones__backlayer
+                img(src="/images/home/yellow-ripple-back.png")
+            .home__opiniones__container
+                .home__opiniones__row.home__opiniones__row--top
+                    h2.home__opiniones__heading-title Wine tasting?
+                    p.home__opiniones__heading-subtitle We have some opinions
+                .home__opiniones__row.home__opiniones__row--bottom
+                    .home__opiniones__column
+                        .home__opiniones__column-image
+                            img(src="/images/home/illustration-daily-tasting.png")
+                        h3.home__opiniones__column-title Daily Tastings
+                        p.home__opiniones__column-subtitle Every day at 5PM
+                        p.home__opiniones__text Come and learn everything about Argentina through a 6 wines-flight (at least!). Book your glass!
+                        a.home__opiniones__button Check here
+                    .home__opiniones__column
+                        .home__opiniones__column-image
+                            img(src="/images/home/illustration-special-tasting.png")
+                        h3.home__opiniones__column-title Special Tastings
+                        p.home__opiniones__column-subtitle They can happen any time!
+                        p.home__opiniones__text We love to make tastings, different topics, regions, wineries, style of wines... and those we most love: ICONS tastings (yes, what you are imaging).
+                        a.home__opiniones__button Check here
+                    .home__opiniones__column
+                        .home__opiniones__column-image
+                            img(src="/images/home/illustration-taylormade-tasting.png")
+                        h3.home__opiniones__column-title Taylor made Tastings
+                        p.home__opiniones__column-subtitle It is your call, you pay, you decide
+                        p.home__opiniones__text This is the opinion for those who want to customize their tastings up to what they like. Wines, wineries, time, size... Ask to the genious and you´ll get a price for it! LOL
+                        a.home__opiniones__button Check here
+        section.home__crew
+            .home__crew__title San Joaquin and Crew
+            .home__crew__container
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-1.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-2.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-3.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-1.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-2.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
+                .home__crew__employee
+                    .home__crew__image
+                        img(src="/images/home/person-3.jpg")
+                    .home__crew__wrapper
+                        p.home__crew__name Joaquin Alberdi
+                        p.home__crew__position Cargo de la persona
