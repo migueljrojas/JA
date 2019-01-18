@@ -133,15 +133,17 @@
         text-transform: uppercase;
         margin: 0;
         font-size: 12px;
+        width: 100%;
 
         @include mq(sm) {
             font-size: 1.5vmin;
         }
+
         span {
             display: none;
-            
+
             @include mq(sm) {
-                display: block;
+                display: inline-block;
             }
         }
     }

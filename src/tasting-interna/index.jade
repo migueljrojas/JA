@@ -1,0 +1,147 @@
+extends ../_layouts/base
+
+include ../_modules/slider/slider
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.tasting.tasting--interna
+        section.tasting--interna__hero
+            .tasting--interna__hero__image
+                img(src="/images/tastings/hero.jpg")
+            .tasting--interna__hero__wrapper
+                p.tasting--interna__hero__date 13-17 Enero
+                h4.tasting__subtitle.tasting__subtitle--interna
+                    |Winery tasting • 
+                    span palermo
+                h3.tasting__title.tasting__title--interna La mejor degustación de vinos hay acá
+                a.tasting--interna__hero__button Book Now
+        section.tasting--interna__book-details
+            .tasting--interna__book-details__row
+                .tasting--interna__book-details__column.tasting--interna__book-details__column--top
+                    .tasting--interna__book-details__group
+                        .tasting--interna__book-details__icon
+                            img(src="/images/tastings/icon-clock.png")
+                        p.tasting--interna__book-details__text 05:00 PM / 06:30 PM
+                    .tasting--interna__book-details__group
+                        .tasting--interna__book-details__icon
+                            img(src="/images/tastings/icon-user.png")
+                        p.tasting--interna__book-details__text 6/30 People
+                    .tasting--interna__book-details__group
+                        .tasting--interna__book-details__icon
+                            img(src="/images/tastings/icon-map.png")
+                        p.tasting--interna__book-details__text 
+                            |Palermo
+                            br
+                            |J.L. Borges 1772
+                    .tasting--interna__book-details__group
+                        .tasting--interna__book-details__icon
+                            img(src="/images/tastings/icon-dollar.png")
+                        p.tasting--interna__book-details__text ARS 1900
+            .tasting--interna__book-details__row
+                .tasting--interna__book-details__column
+                    p.tasting--interna__book-details__comment Every day is unique, taylor made. You can book from 1 ticket and on, and share the tasting with more groups. Duration: 1,5 hours. Wines: At least 6, selected to show the big picture og argentine wines! Cheese and cold cuts!
+            .tasting--interna__book-details__row
+                .tasting--interna__book-details__column
+                    .tasting--interna__book-details__social
+                        ul
+                            li
+                                a
+                                    i.fa.fa-facebook
+                            li
+                                a
+                                    i.fa.fa-twitter
+                            li
+                                a
+                                    i.fa.fa-link
+        section.tasting--interna__related
+            .tasting__search__container
+                .tasting__search__content
+                    .tasting__search__row
+                        .tasting__search__content-heading
+                            h3.tasting__search__title Related tastings
+                        +slider("tasting__search__slider", "fourSlides")
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-1.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                                    
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-2.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-3.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-4.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-1.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                                    
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-2.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-3.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300
+                            a(href="#")    
+                                .tasting__search__slide
+                                    .tasting__search__image
+                                        img(src="/images/tastings/photo-4.jpg")
+                                    .tasting__group.tasting__group--slider.tasting__group--content
+                                        h4.tasting__subtitle.tasting__subtitle--small
+                                            |Winery tasting • 
+                                            span palermo
+                                        h3.tasting__title.tasting__title--small Selected wines
+                                        p.tasting__price.tasting__price--small $1.300

@@ -17,3 +17,8 @@ mixin slider(klass, mode)
         ._slider-all(class=klass)
             if block
                 block
+
+    if mode == 'fourSlides'
+        ._slider-fourslides(class=klass)
+            if block
+                block

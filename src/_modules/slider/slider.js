@@ -6,6 +6,7 @@ var Slider = function() {
     var sliderAlt = $('._slider-alt');
     var sliderAll = $('._slider-all');
     var sliderMulti = $('._slidermulti');
+    var sliderFourSlides = $('._slider-fourslides');
 
     if (slider) {
         slider.each(function(){
@@ -18,6 +19,7 @@ var Slider = function() {
             });
         });
     }
+
     if (sliderAlt) {
         sliderAlt.each(function(){
             $(this).slick({
@@ -40,6 +42,7 @@ var Slider = function() {
             });
         });
     }
+
     if (sliderMulti) {
         sliderMulti.each(function(){
             $(this).slick({
@@ -48,6 +51,37 @@ var Slider = function() {
                 speed: 300,
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                autoplay: false,
+                responsive: [
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    }
+
+    if (sliderFourSlides) {
+        sliderFourSlides.each(function(){
+            $(this).slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
                 autoplay: false,
                 responsive: [
                     {
