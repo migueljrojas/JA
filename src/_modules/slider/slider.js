@@ -47,8 +47,8 @@ var Slider = function() {
                 infinite: true,
                 speed: 300,
                 slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
+                slidesToScroll: 1,
+                autoplay: false,
                 responsive: [
                     {
                         breakpoint: 900,

@@ -1,3 +1,148 @@
 .footer {
-    
+    &__row {
+        padding: 30px 0;
+
+        @include mq(sm) {
+            padding: 6vmin 0;
+        }
+
+        &--top {
+            background: $lightGray;
+            text-align: center;
+        }
+
+        &--bottom {
+            background: $darkestGray;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        color: $darkestGray;
+        font-weight: 700;
+        margin-bottom: 6vmin;
+    }
+
+    &__networks {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @include mq(sm) {
+                flex-direction: row;
+            }
+        }
+
+        li {
+            margin: 20px 0;
+
+            @include mq(sm) {
+                margin: 0 8vmin;
+                width: 15%;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        i {
+            color: $darkestGray;
+            margin-bottom: 2vmin;
+            font-size: 40px;
+
+            @include mq(sm) {
+                font-size: 4vmin;
+
+            }
+        }
+
+        p {
+            color: $darkestGray;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+        &:first-child {
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                margin-bottom: 2vmin;
+            }
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &--logo {
+            height: auto;
+            flex-direction: row;
+        }
+    }
+
+    &__text {
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+
+        @include mq(sm) {
+            font-size: 2vmin;
+        }
+
+        &--color {
+            color: $yellow;
+        }
+    }
+
+    &__logo {
+        height: 10vmin;
+        margin-left: 4vmin;
+
+        &:first-child {
+            border-right: 1px solid $lightGray;
+            padding-right: 4vmin;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__info {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 12px;
+
+        @include mq(sm) {
+            font-size: 1.5vmin;
+        }
+        span {
+            display: none;
+            
+            @include mq(sm) {
+                display: block;
+            }
+        }
+    }
 }

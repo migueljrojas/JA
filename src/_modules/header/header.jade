@@ -1,34 +1,31 @@
 header.header
-    .container
-        .row
-            .col-xs-24
-                .header__container
-                    .header__logo
-                        img(src="/images/logo.png")
-                    nav.header__nav
-                        each item in site.data.header
-                            ul
-                                li
-                                    a(href=item.url)=item.name
-                                    
-                    .header__wrapper
-                        .header__social
-                            ul
-                                li
-                                    a
-                                        i.fa.fa-facebook
-                                li
-                                    a
-                                        i.fa.fa-twitter
-                                li
-                                    a
-                                        i.fa.fa-instagram
-                                        
-                        form.header__form
-                            input.header__input(type="text", placeholder="Buscar")
-                            button.header__search-button(href="#buscar")
-                                i.fa.fa-search
-                    .header__hamburguer
-                        span
-                        span
-                        span
+    .header__container
+        .header__logo
+            img(src="/images/logo.png")
+        nav.header__nav
+            each item in site.data.header
+                ul
+                    li
+                        a(href=item.url)=item.name
+                        
+        .header__wrapper
+            .header__social
+                ul
+                    li
+                        a
+                            i.fa.fa-facebook
+                    li
+                        a
+                            i.fa.fa-twitter
+                    li
+                        a
+                            i.fa.fa-instagram
+                            
+            form.header__form
+                input.header__input(type="text", placeholder="Buscar")
+                button.header__search-button(href="#buscar")
+                    i.fa.fa-search
+            .header__hamburguer
+                span
+                span
+                span

@@ -59,3 +59,42 @@
 [data-parallax]{
     position: relative;
 }
+
+.row-two-thirds {
+    height: 66.66%;
+    display: flex;
+    overflow: hidden;
+}
+
+.row-third {
+    height: 33.34%;
+    display: flex;
+    overflow: hidden;
+}
+
+.row-half {
+    height: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.row-max {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.column-third {
+    width: 33.34%;
+    overflow: hidden;
+}
+
+.column-two-thirds {
+    width: 66.66%;
+    overflow: hidden;
+}
+
+.column-half {
+    width: 50%;
+    overflow: hidden;
+}

@@ -15,14 +15,23 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
-        height: 10vmin;
+        height: 10vh;
         align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq(sm) {
+            height: 10vh;
+        }
     }
 
     &__logo {
         height: 100%;
         position: relative;
+        width: 6%;
+        z-index: 2;
 
         img {
             position: absolute;
@@ -34,18 +43,46 @@
     }
 
     &__nav {
+        @include trans;
+
+        position: absolute;
+        transform: translateX(-100%);
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        background: $purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10vh;
+
         @include mq(sm) {
-            display: flex;
+            position: static;
+            background: transparent;
+            flex-direction: row;
+            transform: translateX(0);
+            height: auto;
+            padding-top: 0;
         }
 
         li {
-            margin: 0 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+
+            @include mq(sm) {
+                margin: 0 10px;
+                font-size: inherit;
+            }
         }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
+        justify-content: center;
+        z-index: 2;
     }
 
     &__social {
@@ -75,16 +112,26 @@
         width: 0;
         opacity: 0;
         position: absolute;
-        right: 4vw;
         border: none;
         outline: none;
         padding: 5px 10px;
         border-radius: 5px;
+        z-index: -1;
+        right: 100px;
+        color: $black;
 
+        @include mq(sm) {
+            right: 240px;
+        }
 
         &.-open {
-            width: 20vw;
             opacity: 1;
+            z-index: 1;
+            width: 230px;
+
+            @include mq(sm) {
+                width: 25%;
+            }
         }
     }
 
@@ -98,15 +145,12 @@
     &__hamburguer {
         cursor: pointer;
         width: 25px;
-        height: 25px;
+        height: 23px;
+        margin-left: 20px;
 
         @include mq(sm) {
             display: none;
         }
-        // margin: auto;
-        // position: absolute;
-        // right: 32px;
-        // top: 30px;
 
         span {
             background-color: $mainColor;
@@ -146,7 +190,9 @@
         }
 
         #{$h}__nav {
-
+            transform: translateX(0);
+            opacity: 1;
+            left: 0;
         }
     }
 }

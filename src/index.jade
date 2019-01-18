@@ -13,13 +13,18 @@ block content
                             p.home__slide__subtitle=slide.subtitle
                             h2.home__slide__title=slide.title
                             a.home__slide__button=slide.button
-                        .home__slide__wrapper
-                            .home__slide__image
-                                img(src=slide.altImage)
-                            .home__slide__group
-                                p.home__slide__date=slide.date
-                                h3.home__slide__group-title=slide.altTitle
-                                span.home__slide__price=slide.price
+                        .home__slide__container
+                            .home__slide__wrapper
+                                .home__slide__image
+                                    img(src=slide.altImage)
+                                .home__slide__group
+                                    p.home__slide__date=slide.date
+                                    h3.home__slide__group-title=slide.altTitle
+                                    span.home__slide__price=slide.price
+                                .home__slide__decoration-yellow
+                                    img(src="/images/home/dotted-square-yellow.png")
+                                .home__slide__decoration-white
+                                    img(src="/images/home/dotted-square-white.png")
                         .home__slide__layer
                             img(src=slide.layerUrl)
         section.home__agendar
@@ -87,22 +92,24 @@ block content
                         h3.home__opiniones__column-title Daily Tastings
                         p.home__opiniones__column-subtitle Every day at 5PM
                         p.home__opiniones__text Come and learn everything about Argentina through a 6 wines-flight (at least!). Book your glass!
-                        a.home__opiniones__button Check here
+                        a(href="#").home__opiniones__button Check here
                     .home__opiniones__column
                         .home__opiniones__column-image
                             img(src="/images/home/illustration-special-tasting.png")
                         h3.home__opiniones__column-title Special Tastings
                         p.home__opiniones__column-subtitle They can happen any time!
                         p.home__opiniones__text We love to make tastings, different topics, regions, wineries, style of wines... and those we most love: ICONS tastings (yes, what you are imaging).
-                        a.home__opiniones__button Check here
+                        a(href="#").home__opiniones__button Check here
                     .home__opiniones__column
                         .home__opiniones__column-image
                             img(src="/images/home/illustration-taylormade-tasting.png")
                         h3.home__opiniones__column-title Taylor made Tastings
                         p.home__opiniones__column-subtitle It is your call, you pay, you decide
                         p.home__opiniones__text This is the opinion for those who want to customize their tastings up to what they like. Wines, wineries, time, size... Ask to the genious and you´ll get a price for it! LOL
-                        a.home__opiniones__button Check here
+                        a(href="#").home__opiniones__button Check here
         section.home__crew
+            .home__crew__top-layer
+                img(src="/images/home/yellow-ripple-back-bottom.png")
             .home__crew__title San Joaquin and Crew
             .home__crew__container
                 .home__crew__employee
@@ -141,3 +148,132 @@ block content
                     .home__crew__wrapper
                         p.home__crew__name Joaquin Alberdi
                         p.home__crew__position Cargo de la persona
+        section.home__reviews
+            .home__reviews__container
+                .home__reviews__decoration-yellow-top
+                    img(src="/images/home/dotted-square-yellow.png")
+                .home__reviews__decoration-yellow-bottom
+                    img(src="/images/home/dotted-square-yellow.png")
+                .home__reviews__column.home__reviews__column--left
+                    p.home__reviews__comment Yes... he is a saint, it is crazy but it happened. San joaquin is Joaquin Alberdi´s holy version and it turns up every day at the wine store. This are some of the comments people leave in TripAdvisor about the saint... 
+                .home__reviews__column.home__reviews__column--right
+                    +slider("home__reviews__slider", "multi")
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review None of the reviews are false. joaquin is an icredible owner, passionate about wine and so enthusiastic.
+                                .home__reviews__reviewer Sabrina r.
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review Joaquin is fantastic, like to talk and spend time with customers. Hi will ask some questions about your taste and suggestt the better options.
+                                .home__reviews__reviewer luis t.
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review Joaquin is not only a great professional but also an awesome guy!
+                                .home__reviews__reviewer gabriel n.
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review None of the reviews are false. joaquin is an icredible owner, passionate about wine and so enthusiastic.
+                                .home__reviews__reviewer Sabrina r.
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review Joaquin is fantastic, like to talk and spend time with customers. Hi will ask some questions about your taste and suggestt the better options.
+                                .home__reviews__reviewer luis t.
+                        .home__reviews__slide
+                            .home__reviews__wrapper
+                                i.fa.fa-quote-left
+                                .home__reviews__review Joaquin is not only a great professional but also an awesome guy!
+                                .home__reviews__reviewer gabriel n.
+        section.home__galery
+            .home__galery__container
+                .home__galery__column.home__galery__column--main.column-third
+                    .home__galery__row.row-two-thirds
+                        a(href="#")
+                            .home__galery__image
+                                img(src="/images/home/gallery-1.jpg")
+                    .home__galery__row.row-third
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-6.jpg")
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-7.jpg")
+                .home__galery__column.home__galery__column--main.column-third
+                    .home__galery__row.row-third
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-2.jpg")
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-3.jpg")
+                    .home__galery__row.row-two-thirds
+                        a(href="#")
+                            .home__galery__image
+                                img(src="/images/home/gallery-8.jpg")
+                .home__galery__column.home__galery__column--main.column-third
+                    .home__galery__row.row-third
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-4.jpg")
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-5.jpg")
+                    .home__galery__row.row-third
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-9.jpg")
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-10.jpg")
+                    .home__galery__row.row-third
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-11.jpg")
+                        .home__galery__column.column-half
+                            a(href="#")
+                                .home__galery__image
+                                    img(src="/images/home/gallery-12.jpg")
+        section.home__contacto
+            .home__contacto__container
+                .home__contacto__row.home__contacto__row--top
+                    .home__contacto__column.home__contacto__column--top-left.column-half
+                        h2.home__contacto__form-title Contacto
+                        p.home__contacto__form-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        form.home__contacto__form
+                            input.home__contacto__form-input(type="text", placeholder="Nomber")
+                            input.home__contacto__form-input(type="email", placeholder="Email")
+                            textarea.home__contacto__form-input.home__contacto__form-input--textarea(placeholder="Mensaje")
+                            button.home__contacto__form-button Enviar
+                            
+                    .home__contacto__column.home__contacto__column--top-right.column-half
+                        .home__contacto__image
+                            img(src="/images/home/contacto.jpg")
+                        .home__contacto__logo
+                            img(src="/images/trip-advisor.png")
+                .home__contacto__row.home__contacto__row--bottom
+                    .home__contacto__layer
+                    .home__contacto__wrapper
+                        h3.home__contacto__wrapper-title Buenos Aires
+                        p.home__contacto__wrapper-text
+                            |Jorge Luis Borges 1772
+                            br
+                            |Palermo, CABA
+                            br
+                            |Argentina
+                    .home__contacto__column.home__contacto__column--bottom-left.column-two-thirds
+                        .home__contacto__map
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26275.200654633732!2d-58.3991098!3d-34.5940434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb586211edc13%3A0x96ce626c5d9237af!2sar!4v1547671879221" frameborder="0" style="border:0" allowfullscreen)
+                    .home__contacto__column.home__contacto__column--bottom-right.column-third

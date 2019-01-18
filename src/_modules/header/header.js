@@ -17,7 +17,7 @@ var Header = function() {
     });
 
     buscarButton.on('click', function(e) {
-        e.preventDefault();
+        
 
         if (buscarInput.hasClass("-open")) {
             buscarInput.removeClass("-open")
