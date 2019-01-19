@@ -52,7 +52,7 @@ block content
                 form.tasting__search__form
                     .tasting__search__heading
                         .tasting__search__group.tasting__search__group--radio
-                            input.tasting__search__input.tasting__search__input--radio(type="radio" id="all" name="radio")
+                            input.tasting__search__input.tasting__search__input--radio(type="radio" id="all" name="radio" checked)
                             label.tasting__search__label.tasting__search__label--radio(for="all") All
                         .tasting__search__group.tasting__search__group--radio
                             input.tasting__search__input.tasting__search__input--radio(type="radio" id="daily" name="radio")
@@ -68,7 +68,7 @@ block content
                         .tasting__search__group.tasting__search__group--where
                             label.tasting__search__label where
                             select.tasting__search__select
-                                option
+                                option(hidden, disabled, selected)
                                 option Palermo
                                 option Microcentro
                                 option Recoleta
@@ -76,7 +76,7 @@ block content
                         .tasting__search__group.tasting__search__group--when
                             label.tasting__search__label when
                             select.tasting__search__select
-                                option
+                                option(hidden, disabled, selected)
                                 option January
                                 option February
                                 option March
@@ -84,7 +84,7 @@ block content
                         .tasting__search__group.tasting__search__group--capacidad
                             label.tasting__search__label capacidad
                             select.tasting__search__select
-                                option
+                                option(hidden, disabled, selected)
                                 option 1-5 personas
                                 option 6-10 personas
                                 option 11-15 personas

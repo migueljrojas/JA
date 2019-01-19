@@ -372,6 +372,7 @@
                     margin-bottom: 0;
                     padding: 1vw 1vw 1vw 2vw;
                     width: 15%;
+                    margin-bottom: 0;
                 }
             }
 
@@ -441,6 +442,8 @@
             @include mq(sm) {
                 border-radius: 10px;
                 width: 6%;
+                height: auto;
+                margin-bottom: 0;
             }
 
             i {
@@ -513,12 +516,12 @@
             }
 
             .slick-prev {
-                left: -15px;
+                left: -20px;
                 top: 20vh;
             }
 
             .slick-next {
-                right: -15px;
+                right: -20px;
                 top: 20vh;
             }
         }
@@ -586,7 +589,7 @@
                 font-weight: 700;
                 padding: 10px 30px;
 
-                @include mq(ms) {
+                @include mq(sm) {
                     padding: 1vw 3vw;
                 }
             }
