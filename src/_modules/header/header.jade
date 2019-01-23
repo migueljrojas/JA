@@ -1,10 +1,11 @@
 header.header
     .header__container
-        .header__logo
-            img(src="/images/logo.png")
+        a(href="/")
+            .header__logo
+                img(src="/images/logo.png")
         nav.header__nav
-            each item in site.data.header
-                ul
+            ul
+                each item in site.data.header
                     li
                         a(href=item.url)=item.name
                         
@@ -12,13 +13,13 @@ header.header
             .header__social
                 ul
                     li
-                        a
+                        a(href="https://www.facebook.com/LodeJoaquinAlberdi" target="_blank")
                             i.fa.fa-facebook
                     li
-                        a
+                        a(href="https://www.twitter.com/JoaquinAlberdi" target="_blank")
                             i.fa.fa-twitter
                     li
-                        a
+                        a(href="http://www.instagram.com/JoaquinAlberdi" target="_blank")
                             i.fa.fa-instagram
                             
             form.header__form

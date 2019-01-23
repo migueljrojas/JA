@@ -1,11 +1,7 @@
 [
     {
         "name":"Degustaciones",
-        "url":"#"
-    },
-    {
-        "name":"Vinos",
-        "url":"#"
+        "url":"/tasting"
     },
     {
         "name":"Combos",
@@ -21,6 +17,6 @@
     },
     {
         "name":"Contacto",
-        "url":"#"
+        "url":"#contacto"
     }
 ]

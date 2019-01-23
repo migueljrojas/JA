@@ -15,7 +15,7 @@ var Slider = function() {
                 fade: true,
                 arrows: true,
                 infinite: false,
-                autoplay: false
+                autoplay: true
             });
         });
     }
@@ -27,7 +27,7 @@ var Slider = function() {
                 fade: true,
                 arrows: false,
                 infinite: true,
-                autoplay: false
+                autoplay: true
             });
         });
     }
@@ -38,7 +38,7 @@ var Slider = function() {
                 fade: true,
                 arrows: true,
                 infinite: true,
-                autoplay: false
+                autoplay: true
             });
         });
     }
@@ -51,7 +51,7 @@ var Slider = function() {
                 speed: 300,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
                 responsive: [
                     {
                         breakpoint: 900,
