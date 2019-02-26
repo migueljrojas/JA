@@ -10,7 +10,7 @@
     z-index: 1000;
 
     &.sticky {
-        background: $purple;
+        background: $gray;
     }
 
     &__container {
@@ -52,7 +52,7 @@
         top: 0;
         bottom: 0;
         left: 0;
-        background: $purple;
+        background: $gray;
         display: flex;
         justify-content: center;
         align-items: center;
